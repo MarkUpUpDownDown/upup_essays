@@ -6,7 +6,7 @@ import frontmatter
 from markupupdowndown.config import load_main_config, resolve_path
 from markupupdowndown.generators import find_skel_dir, render_skel_dir
 
-__version__ = "0.1"
+__version__ = "0.1.1"
 
 
 def _file_metadata(file_abspath):
