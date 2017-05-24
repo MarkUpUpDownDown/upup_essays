@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head_extra %}
+    <link rel="stylesheet" type="text/css" href="/static/css/essays.css">
+{% endblock %}
+
+{% block body_content %}
+<ul class="essay_list">
+{% for essay in essays_list %}
+    <li class="essay_title"><a href="/essays/{{ essay.slug }}">{{ essay.title }}</a></li>
+    <li class="essay_date">{{ essay.date }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
